@@ -8,31 +8,33 @@
 
 body {
   background-color: rgb(219, 219, 219);
+  /*le agrego una transición para que lo haga de apoco, 2 segundos demora y es igual para todos, lineal*/
+  transition: all 2000ms linear; /*no es bueno aplicarlo en el body, sino que hay que hacerlo en cada elemento*/
 }
 
 h1 {
-  padding: .5em 1em;
   background-color: white;
   border-bottom: 1px solid lightgrey;
   color: grey;
+  padding: .5em 1em;
 }
 
 .contenedor {
+  margin: 2em 10%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 80%;
-  margin: 2em 10%;
 }
 
 .item {
-  width: 30em;
   background-color: white;
-  box-sizing: border-box;
-  padding: 1.5em;
-  margin-bottom: 1em;
   border-radius: 5px;
   border: 1px solid lightgray;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  padding: 1.5em;
+  width: 30em;
 }
 
 .item img {
@@ -58,8 +60,8 @@ body.dark{
 /*las modificaciones al titulo 'la familia de los felinos*/
 .dark h1{ 
   background-color: rgb(19, 19, 19);
-  color: rgb(170, 170, 170);
   border-color: black;
+  color: rgb(170, 170, 170);
 }
 
 /*las modificaciones a los items*/
